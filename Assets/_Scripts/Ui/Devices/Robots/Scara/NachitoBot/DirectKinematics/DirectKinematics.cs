@@ -1,0 +1,47 @@
+using UnityEngine;
+using UnityEngine.UIElements;
+
+namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.DirectKinematics
+{
+    public class DirectKinematics : MonoBehaviour
+    {
+        private UIDocument _directKinematicsUIDocument;
+        private static VisualElement _directKinematicsRoot;
+        private static bool _isInterfaceDirectKinematicsActive;
+        internal bool IsInterfaceDirectKinematicsActive
+        {
+            get => _isInterfaceDirectKinematicsActive;
+            set => _isInterfaceDirectKinematicsActive = value;
+        }
+        private void Awake()
+        {
+            _directKinematicsUIDocument = GetComponent<UIDocument>();
+            if (_directKinematicsUIDocument==null)
+            {
+                Debug.Log("Interface dont found");
+            }
+            else
+            {
+                _directKinematicsRoot = _directKinematicsUIDocument.rootVisualElement;
+                Debug.Log($"Interface {gameObject.name} found");
+            }
+            
+        }
+        internal static void ShowUi()
+        {
+            _isInterfaceDirectKinematicsActive = true;
+            if (_directKinematicsRoot!=null)
+            {
+                _directKinematicsRoot.style.display = DisplayStyle.Flex;
+            }
+        }
+        internal static void HideUi()
+        {
+            _isInterfaceDirectKinematicsActive = false;
+            if (_directKinematicsRoot!=null)
+            {
+                _directKinematicsRoot.style.display = DisplayStyle.None;
+            }
+        }
+    }
+}
