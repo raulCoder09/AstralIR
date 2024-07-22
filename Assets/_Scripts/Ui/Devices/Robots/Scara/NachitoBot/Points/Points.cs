@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Points
             else
             {
                 _pointsRoot = _pointsUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             
         }

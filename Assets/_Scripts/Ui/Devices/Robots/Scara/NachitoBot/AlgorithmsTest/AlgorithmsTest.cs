@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.AlgorithmsTest
             else
             {
                 _algorithmsTestRoot = _algorithmsTestUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             
         }

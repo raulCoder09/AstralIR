@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.ControlPanel
             else
             {
                 _controlPanelRoot = _controlPanelUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             
         }

@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.DirectKinematics
             else
             {
                 _directKinematicsRoot = _directKinematicsUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             
         }

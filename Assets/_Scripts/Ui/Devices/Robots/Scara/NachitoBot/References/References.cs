@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.References
             else
             {
                 _referencesRoot = _referencesUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             
         }

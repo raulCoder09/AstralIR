@@ -1,10 +1,24 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Scripts/Ui/Applications/Login/Login.uss?fileID=7433441132597879392&amp;guid=0b289d85443d24c22b303b79272dc0e6&amp;type=3#Login" />
+    <Style src="project://database/Assets/_Scripts/Ui/Application/Login/Login.uss?fileID=7433441132597879392&amp;guid=0b289d85443d24c22b303b79272dc0e6&amp;type=3#Login" />
     <engine:VisualElement name="Container" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgb(255, 255, 255);">
         <engine:VisualElement name="Header" style="flex-grow: 1; width: 100%; height: 10%;" />
         <engine:VisualElement name="Body" style="flex-grow: 1; height: 80%; width: 100%;">
-            <engine:VisualElement name="TitlePanel" style="flex-grow: 1; width: 100%; height: 100%; align-items: center; justify-content: center; align-self: center; align-content: center;">
+            <engine:VisualElement name="TitlePanel" style="flex-grow: 1; width: 100%; height: 10%; align-items: center; justify-content: center; align-self: center; align-content: center;">
                 <engine:Label text="Login" name="Tittle" style="font-size: 50%;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="TextFieldsPanel" style="flex-grow: 1; height: 40%; width: 100%;">
+                <engine:TextField label="Text Field" placeholder-text="filler text" name="Username" />
+                <engine:TextField label="Text Field" placeholder-text="filler text" name="Password" />
+            </engine:VisualElement>
+            <engine:VisualElement name="LinkPanel" style="flex-grow: 1; height: 10%; width: 100%;">
+                <engine:Label text="Label" />
+            </engine:VisualElement>
+            <engine:VisualElement name="CheckboxPanel" style="flex-grow: 1; height: 10%; width: 100%;">
+                <engine:Toggle label="Toggle" name="Toggle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ButtonsPanel" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly; align-self: center; align-content: center; -unity-text-align: middle-left; height: 30%; width: 100%;">
+                <engine:Button text="Login" name="Login" />
+                <engine:Button text="Exit" name="Exit" />
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement name="Footer" style="flex-grow: 1; width: 100%; height: 10%;" />
