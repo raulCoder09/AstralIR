@@ -35,7 +35,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Sequences
                 _sequencesRoot.style.display = DisplayStyle.Flex;
             }
         }
-        internal static void HideUi()
+        internal void HideUi()
         {
             _isInterfaceSequencesActive = false;
             if (_sequencesRoot!=null)

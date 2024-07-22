@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.IoTGateway
         private UIDocument _ioTGatewayUIDocument;
         private static VisualElement _ioTGatewayRoot;
         private static bool _isInterfaceIoTGatewayActive;
-        internal bool IsInterfaceIoTGatewayActive
+        internal static bool IsInterfaceIoTGatewayActive
         {
             get => _isInterfaceIoTGatewayActive;
             set => _isInterfaceIoTGatewayActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.IoTGateway
             else
             {
                 _ioTGatewayRoot = _ioTGatewayUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
             

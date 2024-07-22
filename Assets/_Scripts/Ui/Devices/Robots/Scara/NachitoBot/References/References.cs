@@ -35,7 +35,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.References
                 _referencesRoot.style.display = DisplayStyle.Flex;
             }
         }
-        internal static void HideUi()
+        internal void HideUi()
         {
             _isInterfaceReferencesActive = false;
             if (_referencesRoot!=null)

@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.AlgorithmsTest
     public class AlgorithmsTest : MonoBehaviour
     {
         private UIDocument _algorithmsTestUIDocument;
-        private static VisualElement _algorithmsTestRoot;
-        private static bool _isInterfaceAlgorithmsTestActive;
+        private  VisualElement _algorithmsTestRoot;
+        private  bool _isInterfaceAlgorithmsTestActive;
         internal bool IsInterfaceAlgorithmsTestActive
         {
             get => _isInterfaceAlgorithmsTestActive;
@@ -27,7 +27,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.AlgorithmsTest
             }
             
         }
-        internal static void ShowUi()
+        internal  void ShowUi()
         {
             _isInterfaceAlgorithmsTestActive = true;
             if (_algorithmsTestRoot!=null)
@@ -35,7 +35,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.AlgorithmsTest
                 _algorithmsTestRoot.style.display = DisplayStyle.Flex;
             }
         }
-        internal static void HideUi()
+        internal  void HideUi()
         {
             _isInterfaceAlgorithmsTestActive = false;
             if (_algorithmsTestRoot!=null)

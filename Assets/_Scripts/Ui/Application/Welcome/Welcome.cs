@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Welcome
             else
             {
                 _welcomeRoot = _welcomeUIDocument.rootVisualElement;
-                print($"Interface {gameObject.name} found");
             }
             HideUi();
         }

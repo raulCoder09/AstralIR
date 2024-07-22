@@ -7,11 +7,11 @@ namespace _Scripts.Ui.Application.SupportAndHelp
     {
         private UIDocument _supportAndHelpUIDocument;
         private static VisualElement _supportAndHelpRoot;
-        private static bool _isInterfaceSupportAndHelpActive;
-        internal bool IsInterfaceSupportAndHelpActive
+        private static bool _isInterfaceSupportAndHelpAndHelpActive;
+        internal static bool IsInterfaceSupportAndHelpActive
         {
-            get => _isInterfaceSupportAndHelpActive;
-            set => _isInterfaceSupportAndHelpActive = value;
+            get => _isInterfaceSupportAndHelpAndHelpActive;
+            set => _isInterfaceSupportAndHelpAndHelpActive = value;
         }
         private void Awake()
         {
@@ -23,13 +23,13 @@ namespace _Scripts.Ui.Application.SupportAndHelp
             else
             {
                 _supportAndHelpRoot = _supportAndHelpUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
+            
         }
         internal static void ShowUi()
         {
-            _isInterfaceSupportAndHelpActive = true;
+            _isInterfaceSupportAndHelpAndHelpActive = true;
             if (_supportAndHelpRoot!=null)
             {
                 _supportAndHelpRoot.style.display = DisplayStyle.Flex;
@@ -37,7 +37,7 @@ namespace _Scripts.Ui.Application.SupportAndHelp
         }
         internal static void HideUi()
         {
-            _isInterfaceSupportAndHelpActive = false;
+            _isInterfaceSupportAndHelpAndHelpActive = false;
             if (_supportAndHelpRoot!=null)
             {
                 _supportAndHelpRoot.style.display = DisplayStyle.None;

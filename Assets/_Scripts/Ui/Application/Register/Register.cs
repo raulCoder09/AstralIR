@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.Register
         private UIDocument _registerUIDocument;
         private static VisualElement _registerRoot;
         private static bool _isInterfaceRegisterActive;
-        internal bool IsInterfaceRegisterActive
+        internal static bool IsInterfaceRegisterActive
         {
             get => _isInterfaceRegisterActive;
             set => _isInterfaceRegisterActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Register
             else
             {
                 _registerRoot = _registerUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
             

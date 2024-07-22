@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.SystemLogs
         private UIDocument _systemLogsUIDocument;
         private static VisualElement _systemLogsRoot;
         private static bool _isInterfaceSystemLogsActive;
-        internal bool IsInterfaceSystemLogsActive
+        internal static bool IsInterfaceSystemLogsActive
         {
             get => _isInterfaceSystemLogsActive;
             set => _isInterfaceSystemLogsActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.SystemLogs
             else
             {
                 _systemLogsRoot = _systemLogsUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
         }
