@@ -35,7 +35,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.JogAndTeach
                 _jogAndTeachRoot.style.display = DisplayStyle.Flex;
             }
         }
-        internal static void HideUi()
+        internal void HideUi()
         {
             _isInterfaceJogAndTeachActive = false;
             if (_jogAndTeachRoot!=null)

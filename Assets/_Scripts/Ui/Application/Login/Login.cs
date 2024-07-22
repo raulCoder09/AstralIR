@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.Login
         private UIDocument _loginUIDocument;
         private static VisualElement _loginRoot;
         private static bool _isInterfaceLoginActive;
-        internal bool IsInterfaceLoginActive
+        internal static bool IsInterfaceLoginActive
         {
             get => _isInterfaceLoginActive;
             set => _isInterfaceLoginActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Login
             else
             {
                 _loginRoot = _loginUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
             

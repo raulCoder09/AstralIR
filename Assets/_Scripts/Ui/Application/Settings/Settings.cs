@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.Settings
         private UIDocument _settingsUIDocument;
         private static VisualElement _settingsRoot;
         private static bool _isInterfaceSettingsActive;
-        internal bool IsInterfaceSettingsActive
+        internal static bool IsInterfaceSettingsActive
         {
             get => _isInterfaceSettingsActive;
             set => _isInterfaceSettingsActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Settings
             else
             {
                 _settingsRoot = _settingsUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
             

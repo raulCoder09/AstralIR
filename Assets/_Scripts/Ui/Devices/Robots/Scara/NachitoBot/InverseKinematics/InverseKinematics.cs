@@ -35,7 +35,7 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.InverseKinematics
                 _inverseKinematicsRoot.style.display = DisplayStyle.Flex;
             }
         }
-        internal static void HideUi()
+        internal void HideUi()
         {
             _isInterfaceInverseKinematicsActive = false;
             if (_inverseKinematicsRoot!=null)

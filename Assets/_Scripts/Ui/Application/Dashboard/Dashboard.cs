@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.Dashboard
         private UIDocument _dashboardUIDocument;
         private static VisualElement _dashboardRoot;
         private static bool _isInterfaceDashboardActive;
-        internal bool IsInterfaceDashboardActive
+        internal static bool IsInterfaceDashboardActive
         {
             get => _isInterfaceDashboardActive;
             set => _isInterfaceDashboardActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Dashboard
             else
             {
                 _dashboardRoot = _dashboardUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
         }

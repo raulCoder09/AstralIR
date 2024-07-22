@@ -8,7 +8,7 @@ namespace _Scripts.Ui.Application.Maintenance
         private UIDocument _maintenanceUIDocument;
         private static VisualElement _maintenanceRoot;
         private static bool _isInterfaceMaintenanceActive;
-        internal bool IsInterfaceMaintenanceActive
+        internal static bool IsInterfaceMaintenanceActive
         {
             get => _isInterfaceMaintenanceActive;
             set => _isInterfaceMaintenanceActive = value;
@@ -23,7 +23,6 @@ namespace _Scripts.Ui.Application.Maintenance
             else
             {
                 _maintenanceRoot = _maintenanceUIDocument.rootVisualElement;
-                Debug.Log($"Interface {gameObject.name} found");
             }
             HideUi();
             
