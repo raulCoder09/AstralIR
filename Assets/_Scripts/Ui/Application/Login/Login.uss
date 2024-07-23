@@ -1,0 +1,84 @@
+.Container{
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.Header{
+    width: 100%;
+    height: 10%;
+}
+
+.Body{
+    width: 100%;
+    height: 80%;
+}
+
+.TitlePanel{
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.Tittle{
+    color: black;
+    height: 100%;
+    font-size: 10px;
+    -unity-text-align: middle-center;
+}
+
+.TextFieldsPanel{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 50%;
+}
+
+.Username{
+    width: 50%;
+    height: 40%;
+}
+
+.Password{
+}
+
+.LinkPanel{
+    background-color: royalblue;
+    width: 100%;
+    height: 10%;
+}
+
+.Link{
+    
+}
+.CheckboxPanel{
+    background-color: rosybrown;
+    width: 100%;
+    height: 10%;
+}
+
+.RememberMe{
+    
+}
+
+.ButtonsPanel{
+    background-color: aquamarine;
+    width: 100%;
+    height: 20%;
+}
+
+.Login{
+    
+}
+.Exit{
+    
+}
+
+.Footer{
+    width: 100%;
+    height: 10%;
+}
