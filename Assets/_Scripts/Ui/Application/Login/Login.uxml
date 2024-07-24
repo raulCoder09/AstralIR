@@ -17,8 +17,8 @@
                 <engine:Toggle name="RememberMe" class="RememberMe" text="Remember me" />
             </engine:VisualElement>
             <engine:VisualElement name="ButtonsPanel" class="ButtonsPanel">
-                <!-- <engine:Button text="Button" /> -->
-                <!-- <engine:Button text="Button" /> -->
+                <engine:Button name="Login" class="Login" text="Login" />
+                <engine:Button name="Exit" class="Exit" text="Exit" />
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement name="Footer" class="Footer" />
