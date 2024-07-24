@@ -1,24 +1,24 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/_Scripts/Ui/Application/Login/Login.uss?fileID=7433441132597879392&amp;guid=0b289d85443d24c22b303b79272dc0e6&amp;type=3#Login" />
-    <engine:VisualElement name="Container" class="Container" >
+    <engine:VisualElement name="Container" class="Container">
         <engine:VisualElement name="Header" class="Header" />
-        <engine:VisualElement name="Body" class="Body" >
+        <engine:VisualElement name="Body" class="Body">
             <engine:VisualElement name="TitlePanel" class="TitlePanel">
-                <engine:Label name="Tittle" class="Tittle" text="Login"  />
+                <engine:Label name="Tittle" text="Login" class="Tittle" />
             </engine:VisualElement>
             <engine:VisualElement name="TextFieldsPanel" class="TextFieldsPanel">
-                <engine:TextField name="Username" class="Username" placeholder-text="Username"  />
-                <engine:TextField name="Password" class="Password" placeholder-text="Password" />
+                <engine:TextField name="Username" placeholder-text="Username" class="Username" />
+                <engine:TextField name="Password" placeholder-text="Password" password="true" class="Password" />
             </engine:VisualElement>
             <engine:VisualElement name="LinkPanel" class="LinkPanel">
-                <!-- <engine:Label name="Link" class="Link" text="Do you need register??" /> -->
+                <engine:Label name="Link" class="Link" text="Do you want register?" />
             </engine:VisualElement>
             <engine:VisualElement name="CheckboxPanel" class="CheckboxPanel">
-                <!-- <engine:Toggle name="RememberMe" class="RememberMe" text="Remember me" /> -->
+                <engine:Toggle name="RememberMe" class="RememberMe" text="Remember me" />
             </engine:VisualElement>
             <engine:VisualElement name="ButtonsPanel" class="ButtonsPanel">
-                <!-- <engine:Button name="Login" class="Login" text="Login" /> -->
-                <!-- <engine:Button name="Exit"  class="Exit" text="Exit"/> -->
+                <engine:Button name="Login" class="Login" text="Login" />
+                <engine:Button name="Exit" class="Exit" text="Exit" />
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement name="Footer" class="Footer" />
