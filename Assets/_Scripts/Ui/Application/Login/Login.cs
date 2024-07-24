@@ -76,23 +76,39 @@ namespace _Scripts.Ui.Application.Login
                 {
                     case < 400:
                         _tittle.style.fontSize = 12;
-                        _username.style.width = 10;
-                        _username.style.height = 10;
+                        _username.style.width = _password.style.width=180;
+                        _username.style.height = _password.style.height =30;
+                        _username.style.fontSize = _password.style.fontSize= 7;
                         break;
                     case < 600 and >= 400:
                         _tittle.style.fontSize = 12;
+                        _username.style.width = _password.style.width=180;
+                        _username.style.height = _password.style.height =30;
+                        _username.style.fontSize = _password.style.fontSize= 7;
                         break;
                     case < 800 and >= 600:
                         _tittle.style.fontSize = 20;
+                        _username.style.width = _password.style.width=180;
+                        _username.style.height = _password.style.height =30;
+                        _username.style.fontSize = _password.style.fontSize= 7;
                         break;
                     case < 1000 and >= 800:
                         _tittle.style.fontSize = 23;
+                        _username.style.width = _password.style.width=250;
+                        _username.style.height = _password.style.height =45;
+                        _username.style.fontSize = _password.style.fontSize= 18;
                         break;
                     case < 1200 and >= 1000:
                         _tittle.style.fontSize = 20;
+                        _username.style.width = _password.style.width=180;
+                        _username.style.height = _password.style.height =30;
+                        _username.style.fontSize = _password.style.fontSize= 7;
                         break;
                     case < 1500 and >= 1200:
                         _tittle.style.fontSize = 40;
+                        _username.style.width = _password.style.width=400;
+                        _username.style.height = _password.style.height =50;
+                        _username.style.fontSize = _password.style.fontSize= 22;
                         break;
                     default:
                         break;
