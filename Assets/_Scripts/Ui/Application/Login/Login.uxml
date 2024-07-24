@@ -6,13 +6,20 @@
             <engine:VisualElement name="TitlePanel" class="TitlePanel">
                 <engine:Label name="Tittle" text="Login" class="Tittle" />
             </engine:VisualElement>
-            <engine:VisualElement name="TextFieldsPanel" class="TextFieldsPanel" >
+            <engine:VisualElement name="TextFieldsPanel" class="TextFieldsPanel">
                 <engine:TextField name="Username" placeholder-text="Username" class="Username" />
                 <engine:TextField name="Password" placeholder-text="Password" password="true" class="Password" />
             </engine:VisualElement>
-            <engine:VisualElement name="LinkPanel" class="LinkPanel" />
-            <engine:VisualElement name="CheckboxPanel" class="CheckboxPanel" />
-            <engine:VisualElement name="ButtonsPanel" class="ButtonsPanel" />
+            <engine:VisualElement name="LinkPanel" class="LinkPanel">
+                <engine:Label name="Link" class="Link" text="Do you want register?" />
+            </engine:VisualElement>
+            <engine:VisualElement name="CheckboxPanel" class="CheckboxPanel">
+                <engine:Toggle name="RememberMe" class="RememberMe" text="Remember me" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ButtonsPanel" class="ButtonsPanel">
+                <!-- <engine:Button text="Button" /> -->
+                <!-- <engine:Button text="Button" /> -->
+            </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement name="Footer" class="Footer" />
     </engine:VisualElement>

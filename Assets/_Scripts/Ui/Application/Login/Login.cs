@@ -12,6 +12,7 @@ namespace _Scripts.Ui.Application.Login
         private Label _tittle;
         private TextField _username;
         private TextField _password;
+        private Label _link;
         private static bool _isInterfaceLoginActive;
         internal static bool IsInterfaceLoginActive
         {
@@ -63,6 +64,7 @@ namespace _Scripts.Ui.Application.Login
             _tittle = _loginRoot.Q<Label>("Tittle");
             _username = _loginRoot.Q<TextField>("Username");
             _password = _loginRoot.Q<TextField>("Password");
+            _link = _loginRoot.Q<Label>("Link");
         }
         private void AdjustStyles()
         {
@@ -79,36 +81,42 @@ namespace _Scripts.Ui.Application.Login
                         _username.style.width = _password.style.width=180;
                         _username.style.height = _password.style.height =30;
                         _username.style.fontSize = _password.style.fontSize= 7;
+                        _link.style.fontSize = 8;
                         break;
                     case < 600 and >= 400:
-                        _tittle.style.fontSize = 12;
+                        _tittle.style.fontSize = 18;
                         _username.style.width = _password.style.width=180;
                         _username.style.height = _password.style.height =30;
                         _username.style.fontSize = _password.style.fontSize= 7;
+                        _link.style.fontSize = 9;
                         break;
                     case < 800 and >= 600:
-                        _tittle.style.fontSize = 20;
-                        _username.style.width = _password.style.width=180;
-                        _username.style.height = _password.style.height =30;
-                        _username.style.fontSize = _password.style.fontSize= 7;
+                        _tittle.style.fontSize = 25;
+                        _username.style.width = _password.style.width=225;
+                        _username.style.height = _password.style.height =40;
+                        _username.style.fontSize = _password.style.fontSize= 11;
+                        _link.style.fontSize = 12;
                         break;
                     case < 1000 and >= 800:
                         _tittle.style.fontSize = 23;
                         _username.style.width = _password.style.width=250;
                         _username.style.height = _password.style.height =45;
                         _username.style.fontSize = _password.style.fontSize= 18;
+                        _link.style.fontSize = 22;
                         break;
                     case < 1200 and >= 1000:
                         _tittle.style.fontSize = 20;
                         _username.style.width = _password.style.width=180;
                         _username.style.height = _password.style.height =30;
                         _username.style.fontSize = _password.style.fontSize= 7;
+                        _link.style.fontSize = 22;
                         break;
                     case < 1500 and >= 1200:
                         _tittle.style.fontSize = 40;
                         _username.style.width = _password.style.width=400;
                         _username.style.height = _password.style.height =50;
                         _username.style.fontSize = _password.style.fontSize= 22;
+                        _link.style.fontSize = 22;
                         break;
                     default:
                         break;
