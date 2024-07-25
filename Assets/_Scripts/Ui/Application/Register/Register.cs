@@ -92,7 +92,6 @@ namespace _Scripts.Ui.Application.Register
         {
             var widthScreen = _container.resolvedStyle.width;
             var heightScreen=_container.resolvedStyle.height;
-            print(widthScreen);
             if (!float.IsNaN(widthScreen))
             {
                 switch (widthScreen)
