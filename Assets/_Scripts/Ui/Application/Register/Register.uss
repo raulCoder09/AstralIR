@@ -1,0 +1,98 @@
+.Container{
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.Header{
+    width: 100%;
+    height: 10%;
+}
+
+.Body{
+    width: 100%;
+    height: 80%;
+}
+.TitlePanel{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+}
+.Tittle{
+    color: black;
+    height: 100%;
+    font-size: 12px;
+    -unity-text-align: middle-center;
+}
+.TextFieldsPanel{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    align-self: center;
+    background-color: royalblue;
+}
+.Email{
+    width: 180px;
+    height: 30px;
+    font-size: 7px;
+}
+.Username{
+    width: 180px;
+    height: 30px;
+    font-size: 7px;
+}
+.Password{
+    width: 180px;
+    height: 30px;
+    font-size: 7px;
+}
+.ConfirmPassword{
+    width: 180px;
+    height: 30px;
+    font-size: 7px;
+}
+.LinkPanel{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: rosybrown;
+}
+.Link{
+    color: black;
+    height: 100%;
+    font-size: 10px;
+    -unity-text-align: middle-center;
+}
+.ButtonsPanel{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    background-color: seagreen;
+}
+.Register{
+    width: 180px;
+    height: 18px;
+    font-size: 10px;
+}
+.Exit{
+    width: 180px;
+    height: 18px;
+    font-size: 10px;
+}
+.Footer{
+    width: 100%;
+    height: 10%;
+}
