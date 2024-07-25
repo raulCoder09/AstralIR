@@ -69,18 +69,24 @@ namespace _Scripts.Ui.Application.Login
             _username = _loginRoot.Q<TextField>("Username");
             _password = _loginRoot.Q<TextField>("Password");
             _link = _loginRoot.Q<Label>("Link");
+            _link.RegisterCallback<ClickEvent>(evt => RegisterUi());
             _rememberMe = _loginRoot.Q<Toggle>("RememberMe");
             _login = _loginRoot.Q<Button>("Login");
-            _login.clicked += LogIn;
+            _login.clicked += LogInUi;
             _exit = _loginRoot.Q<Button>("Exit");
             _exit.clicked += QuitApplication;
+        }
+        private void RegisterUi()
+        {
+            HideUi();
+            Register.Register.ShowUi();
         }
         private void QuitApplication()
         {
             UnityEngine.Application.Quit();
             EndSession();
         }
-        private void LogIn()
+        private void LogInUi()
         {
             //ToDo logica para iniciar sesion
             if (true)
