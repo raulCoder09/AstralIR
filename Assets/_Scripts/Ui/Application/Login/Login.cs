@@ -72,7 +72,7 @@ namespace _Scripts.Ui.Application.Login
             _link.RegisterCallback<ClickEvent>(evt => RegisterUi());
             _rememberMe = _loginRoot.Q<Toggle>("RememberMe");
             _login = _loginRoot.Q<Button>("Login");
-            _login.clicked += LogInUi;
+            _login.clicked += LogInUser;
             _exit = _loginRoot.Q<Button>("Exit");
             _exit.clicked += QuitApplication;
         }
@@ -86,7 +86,7 @@ namespace _Scripts.Ui.Application.Login
             UnityEngine.Application.Quit();
             EndSession();
         }
-        private void LogInUi()
+        private void LogInUser()
         {
             //ToDo logica para iniciar sesion
             if (true)
