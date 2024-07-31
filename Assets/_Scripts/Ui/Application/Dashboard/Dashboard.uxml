@@ -1,12 +1,27 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Scripts/Ui/Applications/Dashboard/Dashboard.uss?fileID=7433441132597879392&amp;guid=61f35c83e8d284c20a579516960a8a61&amp;type=3#Dashboard" />
-    <engine:VisualElement name="Container">
-        <engine:VisualElement name="Header" />
-        <engine:VisualElement name="Body" >
-            <engine:VisualElement name="TitlePanel">
-                <engine:Label text="Dashboard" name="Tittle" />
+    <Style src="project://database/Assets/_Scripts/Ui/Application/Dashboard/Dashboard.uss?fileID=7433441132597879392&amp;guid=61f35c83e8d284c20a579516960a8a61&amp;type=3#Dashboard" />
+    <engine:VisualElement name="Container" class="Container">
+        <engine:VisualElement name="Header" class="Header" />
+        <engine:VisualElement name="Body" class="Body">
+            <engine:VisualElement name="TitlePanel" class="TitlePanel">
+                <engine:Label name="Tittle" text="Dashboard" class="Tittle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ButtonsPanel" class="ButtonsPanel">
+                <engine:Button name="Simulator" text="Simulator" class="ButtonsDashboard" />
+                <engine:Button name="MarkerBasedAugmentedReality" text="Marker-Based Augmented Reality (MBAR)" class="ButtonsDashboard" />
+                <engine:Button name="ExtendedReality" text="Extended Reality (XR)" class="ButtonsDashboard" />
+                <engine:Button name="AugmentedReality" text="Augmented reality (AR)" class="ButtonsDashboard" />
+                <engine:Button name="SupportAndHelp" text="Support and help" class="ButtonsDashboard" />
+                <engine:Button name="SystemLogs" text="System logs" class="ButtonsDashboard" />
+                <engine:Button name="Settings" text="Settings" class="ButtonsDashboard" />
+                <engine:Button name="Spare" text="Spare" class="ButtonsDashboard" />
+                <engine:Button name="Spare" text="Spare" class="ButtonsDashboard" />
+                <engine:Button name="Spare" text="Spare" class="ButtonsDashboard" />
             </engine:VisualElement>
         </engine:VisualElement>
-        <engine:VisualElement name="Footer"/>
+        <engine:VisualElement name="Footer" class="Footer" >
+            <engine:Button name="Welcome" class="Welcome" text="Welcome"/>
+            <engine:Button name="Exit" class="Exit" text="Exit"/>
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

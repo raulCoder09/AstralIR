@@ -1,3 +1,41 @@
-<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Scripts/Ui/Devices/ControlPanel/ControlPanel.uss?fileID=7433441132597879392&amp;guid=d1f696a7ab88148aeb5a051f23037f69&amp;type=3#ControlPanel" />
+<engine:UXML  xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Scripts/Ui/Devices/Robots/Scara/NachitoBot/ControlPanel/ControlPanel.uss?fileID=7433441132597879392&amp;guid=d1f696a7ab88148aeb5a051f23037f69&amp;type=3#ControlPanel" />
+    <engine:VisualElement name="Container" class="Container">
+        <engine:VisualElement name="Header" class="Header">
+            <engine:VisualElement name="MenuPanel" class="MenuPanel">
+                <engine:DropdownField name="Menu" class="Menu" choices="Algorithms test,Direct Kinematics,Inverse Kinematics,Jog and teach,Points,References,Sequences"  />
+            </engine:VisualElement>
+            <engine:VisualElement name="StatusRobotPanel" class="StatusRobotPanel">
+                <engine:Label name="EmergencyStop" text="Emergency stop: off" class="StatusInfo" />
+                <engine:Label name="Safeguard" text="Safe guard: off" class="StatusInfo" />
+                <engine:Label name="Motors" text="Motors: off" class="StatusInfo" />
+                <engine:Label name="Power" text="Power: Low" class="StatusInfo" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="Body" class="Body">
+            <engine:VisualElement name="DevicePanel" class="DevicePanel" />
+            <engine:VisualElement name="Controls" class="Controls">
+                <engine:VisualElement name="MainControlsPanel" class="MainControlsPanel">
+                    <engine:Button name="MotorOff" class="MCPButtons" text="Motor off" enabled="false" />
+                    <engine:Button name="MotorOn" class="MCPButtons" text="Motor on"/>
+                    <engine:Button name="PowerLow" class="MCPButtons" text="Power low" enabled="false" />
+                    <engine:Button name="PowerHigh" class="MCPButtons" text="Power high" enabled="false" />
+                    <engine:Button name="Reset" class="MCPButtons" text="Reset"  enabled="false" />
+                    <engine:Button name="Home" class="MCPButtons" text="Home" enabled="false"  />
+                </engine:VisualElement>
+                <engine:VisualElement name="JointsTogglePanel" class="JointsTogglePanel" >
+                    <engine:Toggle name="J1" text=" J1" toggle-on-label-click="false" class="J1" />
+                    <engine:Toggle name="J2" text=" J2" toggle-on-label-click="false" class="J2" />
+                    <engine:Toggle name="J3" text=" J3" toggle-on-label-click="false" class="J3" />
+                    <engine:Toggle name="J4" text=" J4" toggle-on-label-click="false" class="J4" />
+                </engine:VisualElement>
+                <engine:VisualElement name="JointsButtonPanel" class="JointsButtonPanel" >
+                    <engine:Button name="FreeAll" text="Free all" class="MCPButtons" enabled="false"/>
+                    <engine:Button name="LockAll" text="Lock all" class="MCPButtons" enabled="false"/>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="Footer" class="Footer" />
+        <engine:VisualElement />
+    </engine:VisualElement>
 </engine:UXML>

@@ -1,3 +1,84 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/_Scripts/Ui/Devices/JogAndTeach/JogAndTeach.uss?fileID=7433441132597879392&amp;guid=56b1a7eff0e2447d39bb36ab28117d63&amp;type=3#JogAndTeach" />
+        <engine:VisualElement name="Container" class="Container">
+        <engine:VisualElement name="Header" class="Header">
+            <engine:VisualElement name="MenuPanel" class="MenuPanel">
+                <engine:DropdownField name="Menu" class="Menu" choices="Control panel, Jog and teach,Points,Sequences,Algorithms test,References"  />
+            </engine:VisualElement>
+            <engine:VisualElement name="StatusRobotPanel" class="StatusRobotPanel">
+                <engine:Label text="Speed: 00.000"/>
+                <engine:Label text="J1: 0.000 deg"/>
+                <engine:Label text="J2: 0.000 deg"/>
+                <engine:Label text="J3: 0.000 mm"/>
+                <engine:Label text="J4: 0.000 deg"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="Body" class="Body">
+
+        </engine:VisualElement>
+        <engine:VisualElement name="Footer" class="Footer" />
+        <engine:VisualElement />
+    </engine:VisualElement>
+    <engine:VisualElement>
+    <!--     <engine:VisualElement name="Container" class="Container" style="flex-direction: row; width: 100%; height: 100%; flex-basis: 100%; flex-grow: 1; align-items: center; align-self: center; align-content: center;"> -->
+    <!--     <engine:VisualElement name="Menu" class="Menu" style="height: 100%; width: 15%; flex-basis: auto; flex-grow: 1; justify-content: space-evenly; align-content: center; align-self: center; align-items: center;"> -->
+    <!--         <engine:Button text="Control panel" name="ControlPanel" style="height: 7%; width: 70%; white-space: normal; font-size: 6%;" /> -->
+    <!--         <engine:Button text="Points" name="Points" style="width: 70%; height: 7%; font-size: 6%; white-space: normal;" /> -->
+    <!--         <engine:Button text="Sequences" name="Sequences" style="height: 7%; width: 70%; font-size: 6%; white-space: normal;" /> -->
+    <!--         <engine:Button text="Algorithms test" name="AlgorithmsTest" style="width: 70%; height: 7%; font-size: 6%; white-space: normal;" /> -->
+    <!--         <engine:Button text="References" name="References" style="width: 70%; height: 7%; font-size: 6%; white-space: normal;" /> -->
+    <!--         <engine:Button text="Menu mode" name="MenuMode" style="width: 70%; height: 7%; font-size: 6%; white-space: normal;" /> -->
+    <!--         <engine:Button text="Exit" name="Exit" style="width: 70%; height: 7%; font-size: 6%; white-space: normal;" /> -->
+    <!--     </engine:VisualElement> -->
+    <!--     <engine:VisualElement name="Device" class="Device" style="height: 100%; width: 80%; flex-basis: auto; flex-grow: 1; justify-content: flex-end;"> -->
+    <!--         <engine:VisualElement name="Status" class="Status" style="flex-direction: row; width: 100%; height: 10%; flex-grow: 1; align-items: center; align-self: center; justify-content: space-evenly; align-content: center;"> -->
+    <!--             <engine:Label text="Speed: 00.000" style="font-size: 6px; color: rgb(255, 255, 255);" /> -->
+    <!--             <engine:Label text="J1: 0.000 deg" style="font-size: 6%; color: rgb(255, 255, 255);" /> -->
+    <!--             <engine:Label text="J2: 0.000 deg" style="font-size: 6px; color: rgb(255, 255, 255);" /> -->
+    <!--             <engine:Label text="J3: 0.000 mm" style="font-size: 6px; color: rgb(255, 255, 255);" /> -->
+    <!--             <engine:Label text="J4: 0.000 deg" style="font-size: 6px; color: rgb(255, 255, 255);" /> -->
+    <!--         </engine:VisualElement> -->
+    <!--         <engine:VisualElement name="Visor" class="Visor" style="width: 100%; height: 50%; font-size: 5px; flex-direction: row; align-items: center; justify-content: flex-end; align-self: center; align-content: center;"> -->
+    <!--             <engine:VisualElement name="ControlAndStatusVisor" style="flex-grow: 0; flex-shrink: 0; width: 15%; height: 15%;"> -->
+    <!--                 <engine:Label text="Target: No detected" name="Target" class="Target" style="font-size: 5%; color: rgb(0, 0, 0); background-color: rgb(255, 0, 0); width: 100%; -unity-text-align: middle-center; flex-wrap: wrap;" /> -->
+    <!--                 <engine:Button text="Camera" name="Camera" style="font-size: 5%; width: 100%; height: auto;" /> -->
+    <!--                 <engine:Button text="Light" name="Light" style="font-size: 5%; width: 100%;" /> -->
+    <!--             </engine:VisualElement> -->
+    <!--         </engine:VisualElement> -->
+    <!--         <engine:VisualElement name="Controls" class="Controls" style="flex-direction: row; width: 100%; height: 40%;"> -->
+    <!--             <engine:VisualElement name="ControlsSection1" class="ControlsSection1" style="justify-content: center; align-content: center; align-self: center; align-items: center; flex-grow: 1; height: 100%; width: 30%; flex-direction: row;"> -->
+    <!--                 <engine:VisualElement name="J1" class="Motors" style="flex-grow: 1; justify-content: space-evenly; align-items: center; align-self: center; align-content: center; width: 20%; height: 100%; white-space: normal;"> -->
+    <!--                     <engine:Button text="+J1" name="PositiveJ1" class="MotorOff" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                     <engine:Button text="-J1" name="NegativeJ1" class="MotorOn" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                 </engine:VisualElement> -->
+    <!--                 <engine:VisualElement name="J2" class="Power" style="flex-grow: 1; justify-content: space-evenly; align-items: center; align-self: center; align-content: center; width: 20%; height: 100%;"> -->
+    <!--                     <engine:Button text="+J2" name="PositiveJ2" class="PowerLow" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                     <engine:Button text="-J2" name="NegativeJ2" class="PowerHigh" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                 </engine:VisualElement> -->
+    <!--                 <engine:VisualElement name="J3" class="Power" style="flex-grow: 1; justify-content: space-evenly; align-items: center; align-self: center; align-content: center; width: 20%; height: 100%;"> -->
+    <!--                     <engine:Button text="+J3" name="PositiveJ3" class="PowerLow" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                     <engine:Button text="-J3" name="NegativeJ3" class="PowerHigh" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                 </engine:VisualElement> -->
+    <!--                 <engine:VisualElement name="J4" class="Power" style="flex-grow: 1; justify-content: space-evenly; align-items: center; align-self: center; align-content: center; width: 20%; height: 100%;"> -->
+    <!--                     <engine:Button text="+J4" name="PositiveJ4" class="PowerLow" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                     <engine:Button text="-J4" name="NegativeJ4" class="PowerHigh" style="width: 70%; height: 10%; white-space: nowrap; font-size: 5%;" /> -->
+    <!--                 </engine:VisualElement> -->
+    <!--             </engine:VisualElement> -->
+    <!--             <engine:VisualElement name="ControlsSection2" class="FreeJoints" style="flex-direction: row; width: 60%; height: 100%; flex-grow: 1; flex-wrap: wrap; font-size: 12%; align-items: center; justify-content: center; align-self: center; align-content: center;"> -->
+    <!--                 <engine:FloatField value="0" placeholder-text="Speed" name="Speed" style="font-size: 30%; -unity-text-align: middle-center; height: auto; width: auto;" /> -->
+    <!--                 <engine:FloatField value="0" placeholder-text="J1 position" name="J1Position" style="font-size: 30%;" /> -->
+    <!--                 <engine:FloatField value="0" placeholder-text="J2 position" name="J2Position" style="flex-direction: row; font-size: 30%;" /> -->
+    <!--                 <engine:FloatField value="0" placeholder-text="J3 position" name="J3Position" style="flex-direction: row; font-size: 30%;" /> -->
+    <!--                 <engine:FloatField value="0" placeholder-text="J4 position" name="J4Position" style="flex-direction: row; font-size: 30%;" /> -->
+    <!--             </engine:VisualElement> -->
+    <!--             <engine:VisualElement name="ControlsSection3" class="FreeJoints" style="flex-direction: column; width: 10%; height: 100%; flex-grow: 1; align-items: center; justify-content: space-evenly; align-self: center; align-content: center; margin-right: 4%;"> -->
+    <!--                 <engine:Button text="Teach" name="Teach" style="width: 100%; height: 10%; font-size: 5%;" /> -->
+    <!--                 <engine:Button text="Brake" name="Brake" style="width: 100%; height: 10%; font-size: 5%;" /> -->
+    <!--                 <engine:Button text="Run" name="Run" style="width: 100%; height: 10%; font-size: 5%;" /> -->
+    <!--                 <engine:Button text="Stop" name="Stop" style="width: 100%; height: 10%; font-size: 5%;" /> -->
+    <!--             </engine:VisualElement> -->
+    <!--         </engine:VisualElement> -->
+    <!--     </engine:VisualElement> -->
+    <!-- </engine:VisualElement> -->
+    </engine:VisualElement>
 </engine:UXML>

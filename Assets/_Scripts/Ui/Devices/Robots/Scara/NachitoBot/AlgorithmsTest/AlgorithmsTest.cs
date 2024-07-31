@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -25,6 +26,10 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.AlgorithmsTest
                 _algorithmsTestRoot = _algorithmsTestUIDocument.rootVisualElement;
             }
             
+        }
+        private void OnEnable()
+        {
+            HideUi();
         }
         internal  void ShowUi()
         {
