@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Sequences
     public class Sequences : MonoBehaviour
     {
         private UIDocument _sequencesUIDocument;
-        private static VisualElement _sequencesRoot;
-        private static bool _isInterfaceSequencesActive;
+        private VisualElement _sequencesRoot;
+        private bool _isInterfaceSequencesActive;
         internal bool IsInterfaceSequencesActive
         {
             get => _isInterfaceSequencesActive;
@@ -24,9 +24,12 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Sequences
             {
                 _sequencesRoot = _sequencesUIDocument.rootVisualElement;
             }
-            
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfaceSequencesActive = true;
             if (_sequencesRoot!=null)

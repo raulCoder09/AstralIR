@@ -1,3 +1,6 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/_Scripts/Ui/Devices/AlgorithmsTest/AlgorithmsTest.uss?fileID=7433441132597879392&amp;guid=1a0310f66f42e4400b5ef8091aa6be2e&amp;type=3#AlgorithmsTest" />
+    <engine:VisualElement>
+        <engine:Label text="AlgorithmsTest"/>
+    </engine:VisualElement>
 </engine:UXML>

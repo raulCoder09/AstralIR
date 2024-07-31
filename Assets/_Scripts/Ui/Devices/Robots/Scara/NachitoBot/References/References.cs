@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.References
     public class References : MonoBehaviour
     {
         private UIDocument _referencesUIDocument;
-        private static VisualElement _referencesRoot;
-        private static bool _isInterfaceReferencesActive;
+        private VisualElement _referencesRoot;
+        private bool _isInterfaceReferencesActive;
         internal bool IsInterfaceReferencesActive
         {
             get => _isInterfaceReferencesActive;
@@ -26,7 +26,11 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.References
             }
             
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfaceReferencesActive = true;
             if (_referencesRoot!=null)

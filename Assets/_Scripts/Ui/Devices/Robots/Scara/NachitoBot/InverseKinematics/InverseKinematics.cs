@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.InverseKinematics
     public class InverseKinematics : MonoBehaviour
     {
         private UIDocument _inverseKinematicsUIDocument;
-        private static VisualElement _inverseKinematicsRoot;
-        private static bool _isInterfaceInverseKinematicsActive;
+        private VisualElement _inverseKinematicsRoot;
+        private bool _isInterfaceInverseKinematicsActive;
         internal bool IsInterfaceInverseKinematicsActive
         {
             get => _isInterfaceInverseKinematicsActive;
@@ -26,7 +26,11 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.InverseKinematics
             }
             
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfaceInverseKinematicsActive = true;
             if (_inverseKinematicsRoot!=null)

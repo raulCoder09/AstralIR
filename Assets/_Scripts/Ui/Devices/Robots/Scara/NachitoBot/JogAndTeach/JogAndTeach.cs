@@ -32,12 +32,12 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.JogAndTeach
             set => _isInterfaceJogAndTeachActive = value;
         }
 
-        internal JogAndTeach(string nameDevice,string category, string tag )
-        { 
-            _nameDevice=nameDevice;
-            _category=category;
-            _tag=tag;
-        }
+        // internal JogAndTeach(string nameDevice,string category, string tag )
+        // { 
+        //     _nameDevice=nameDevice;
+        //     _category=category;
+        //     _tag=tag;
+        // }
         private void Awake()
         {
             _jogAndTeachUIDocument = GetComponent<UIDocument>();
@@ -50,7 +50,11 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.JogAndTeach
                 _jogAndTeachRoot = _jogAndTeachUIDocument.rootVisualElement;
             }
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfaceJogAndTeachActive = true;
             if (_jogAndTeachRoot!=null)

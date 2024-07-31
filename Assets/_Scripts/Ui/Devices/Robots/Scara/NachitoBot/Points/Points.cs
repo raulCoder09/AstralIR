@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Points
     public class Points : MonoBehaviour
     {
         private UIDocument _pointsUIDocument;
-        private static VisualElement _pointsRoot;
-        private static bool _isInterfacePointsActive;
+        private VisualElement _pointsRoot;
+        private bool _isInterfacePointsActive;
         internal bool IsInterfacePointsActive
         {
             get => _isInterfacePointsActive;
@@ -26,7 +26,11 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.Points
             }
             
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfacePointsActive = true;
             if (_pointsRoot!=null)

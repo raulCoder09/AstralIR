@@ -73,19 +73,6 @@ namespace _Scripts.Managers
                 SystemLogs.HideUi();
                 Welcome.HideUi();
             #endregion
-            
-            #region UiNachitoBotHideUi
-
-            _algorithmsTestNb.HideUi();
-            _controlPanelNb.HideUi();
-            _directKinematicsNb.HideUi();
-            _inverseKinematicsNb.HideUi();
-            _jogAndTeachNb.HideUi();
-            _pointsNb.HideUi();
-            _referencesNb.HideUi();
-            _sequencesNb.HideUi();
-
-            #endregion
         } 
     }
 }

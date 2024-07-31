@@ -94,10 +94,6 @@ namespace _Scripts.Ui.Application.Login
                 HideUi();
                 Dashboard.Dashboard.ShowUi();
             }
-            else
-            {
-                print("error de inicio de sesion");
-            }
         }
         private void EndSession()
         {

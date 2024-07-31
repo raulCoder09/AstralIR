@@ -6,8 +6,8 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.DirectKinematics
     public class DirectKinematics : MonoBehaviour
     {
         private UIDocument _directKinematicsUIDocument;
-        private static VisualElement _directKinematicsRoot;
-        private static bool _isInterfaceDirectKinematicsActive;
+        private VisualElement _directKinematicsRoot;
+        private bool _isInterfaceDirectKinematicsActive;
         internal bool IsInterfaceDirectKinematicsActive
         {
             get => _isInterfaceDirectKinematicsActive;
@@ -26,7 +26,11 @@ namespace _Scripts.Ui.Devices.Robots.Scara.NachitoBot.DirectKinematics
             }
             
         }
-        internal static void ShowUi()
+        private void OnEnable()
+        {
+            HideUi();
+        }
+        internal void ShowUi()
         {
             _isInterfaceDirectKinematicsActive = true;
             if (_directKinematicsRoot!=null)
