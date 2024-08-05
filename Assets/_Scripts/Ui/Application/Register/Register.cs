@@ -92,28 +92,6 @@ namespace _Scripts.Ui.Application.Register
         {
             var widthScreen = _container.resolvedStyle.width;
             var heightScreen=_container.resolvedStyle.height;
-            if (!float.IsNaN(widthScreen))
-            {
-                switch (widthScreen)
-                {
-                    case < 400:
-                        _exit.style.width = _register.style.width=90;
-                        break;
-                    case < 600 and >= 400:
-                        _exit.style.width = _register.style.width=180;
-                        break;
-                    case < 800 and >= 600:
-                        break;
-                    case < 1000 and >= 800:
-                        break;
-                    case < 1200 and >= 1000:
-                        break;
-                    case < 1500 and >= 1200:
-                        break;
-                    default:
-                        break;
-                }
-            }
         }
     }
 }
