@@ -30,6 +30,7 @@ namespace _Scripts.Ui.Application.Welcome
                 _welcomeRoot = _welcomeUIDocument.rootVisualElement;
             }
             HideUi();
+            print("awake done");
         }
 
         private void OnEnable()
